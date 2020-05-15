@@ -41,3 +41,5 @@ Django- integration of python with web
 Firebase 
 Dialogflow node js integration
 
+
+Check out the good page, https://confusedcoder1.github.io/NeuroBee/
