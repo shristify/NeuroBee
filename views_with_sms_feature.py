@@ -71,7 +71,7 @@ def postsignUp(requests):
  uid=user['localId']
 
  data= {"name":name, "status":"1", "friend1no":friend1no,"friend2no":friend2no}
-
+#storing data from registration form to variable data in dictionary
  database.child(uid).child("details").set(data)
  msg="Account created sucessfully, please login now"
  return render(requests,"mainPage.html",{"messg":msg})
@@ -83,17 +83,17 @@ def sendsms(requests):
 
      idtoken=requests.session['uid'] 
      a=auths.get_account_info(idtoken)
-     a =a['users']                              
+     a =a['users']                             
      print(a)
      a =a[0]
      a =a['localId']
      print(a)
 
      name=database.child(a).child('details').child('name').get().val()                  #retriving data from firebase database
-     friend1no=database.child(a).child('details').child('friend1no').get().val()       
-     friend2no=database.child(a).child('details').child('friend2no').get().val()
+     firstFriendNumber=database.child(a).child('details').child('friend1no').get().val()       
+     secondFriendNumber=database.child(a).child('details').child('friend2no').get().val()
 
-     print(friend1no)
+     print(firstFriendNumber)
      print(name)
      para={
          'authorization':'XYmpiL3FWBhEcz50HxVuQDteI1RlUgojsSqCO2rGdwyMTvb9PkfaP6NUeFHvVAzjwTnXydOrkEKmo1Gt',
@@ -101,7 +101,7 @@ def sendsms(requests):
          'message':"your friend needs your help, plz contact him",
          'language':'english',
          "route":"p",
-         'numbers':friend1no
+         'numbers':fristFriendNumber
          
      }   
     
