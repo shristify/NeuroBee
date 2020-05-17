@@ -28,13 +28,13 @@ def intro(requests):
 def signIn(requests):
     return render(requests, "mainPage.html")
 
-  
+  #this would happen after sign in
 def postsign(requests):
     email=requests.POST.get('email')
     passw=requests.POST.get('pass')
     try:
-      user=auths.sign_in_with_email_and_password(email,passw)
-      session_id=user['idToken']
+      user=auths.sign_in_with_email_and_password(email,passw) #checking user
+      session_id=user['idToken']  #requesting session
       requests.session['uid']=str(session_id)
     except:
         message="invalid credentials"
@@ -56,7 +56,7 @@ def logout(requests):
     return render(requests,"mainPage.html",{"messg":msg})    
 
 def signUp(requests):
-    return render(requests,"signUpform.html")   
+    return render(requests,"signUpform.html")   #signup form
 
 
 
@@ -83,14 +83,14 @@ def sendsms(requests):
 
      idtoken=requests.session['uid'] 
      a=auths.get_account_info(idtoken)
-     a =a['users']
+     a =a['users']                              
      print(a)
      a =a[0]
      a =a['localId']
      print(a)
 
-     name=database.child(a).child('details').child('name').get().val()
-     friend1no=database.child(a).child('details').child('friend1no').get().val()
+     name=database.child(a).child('details').child('name').get().val()                  #retriving data from firebase database
+     friend1no=database.child(a).child('details').child('friend1no').get().val()       
      friend2no=database.child(a).child('details').child('friend2no').get().val()
 
      print(friend1no)
