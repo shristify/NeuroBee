@@ -4,7 +4,7 @@
     box-sizing: border-box;            
 }
 body{
-    background-image: url(https://www.siljalitvin.com/wp-content/uploads/2018/01/human-android-764x512.jpg);
+    background-image: url(https://wallpaperplay.com/walls/full/7/a/a/121406.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -98,13 +98,14 @@ header{
 }
 
 
+
 .box {
     align-items: center;
     margin-top: 100px;
     margin-left: 560px;
     border: 2px solid black;
  
-  text-decoration: white;
+  text-decoration: rgb(240, 235, 235);
   color: #fff;
   padding-left: 20px;
   padding-top: 10px;
@@ -112,7 +113,7 @@ header{
   cursor: pointer;
   border-radius: 20px;  
   border-color: black;
-  background: rgba(6, 161, 167, 0.986); 
+  background: rgba(78, 214, 124, 0.986); 
   width: 200px;
   height:50px;
 }
@@ -121,14 +122,14 @@ header{
 {
     color: #255784;
     background: #2196f3;
-    text-shadow: #2196f3;
+    text-shadow: #f1f4f7;
     box-shadow: 0 0 10px #2196f3,0 0 20px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3, ;
 }
 
 .mainbutton :hover{
     color: black;
     background:white;
-    text-shadow: #2196f3;
+    text-shadow: #fcfcfc;
     box-shadow: 0 0 10px #2196f3,0 0 20px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3, ;
 }
 
