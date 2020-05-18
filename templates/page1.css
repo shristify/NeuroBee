@@ -1,0 +1,135 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;            
+}
+body{
+    background-image: url(https://www.siljalitvin.com/wp-content/uploads/2018/01/human-android-764x512.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 16px;          
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+}
+.logo{
+    cursor: pointer;
+}
+.nav-area{
+    list-style: none;
+}
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+.nav-area li a{
+    transition: all .3s ease 0s;
+    color: #fff;
+    border: 2px solid black;
+    background: black;
+    padding: 10px 30px;
+    border-radius: 20px;
+    
+}
+.nav-area li a:hover{
+    color: green;
+    transition-delay: 0s;
+}
+.btn-area {
+    border: 2px solid black;
+  background-color: black;
+  color: black;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;  
+  border-color: black;
+  color: white;      
+}
+
+.btn-area:hover{
+    background-color: grey;
+  color: white;
+}
+.btn-area2 {
+    border: 2px solid black;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    
+    border-radius: 20px;
+    background: black;    
+       
+}
+
+.btn-area2:hover{
+    background:grey;
+  color: white;
+}
+
+.paragraph{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    top:50%;
+    text-shadow: 0 0 20px orange;
+    letter-spacing: 5px;
+
+}
+
+
+.box {
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 560px;
+    border: 2px solid black;
+ 
+  text-decoration: white;
+  color: #fff;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 20px;  
+  border-color: black;
+  background: rgba(6, 161, 167, 0.986); 
+  width: 200px;
+  height:50px;
+}
+
+.box:hover
+{
+    color: #255784;
+    background: #2196f3;
+    text-shadow: #2196f3;
+    box-shadow: 0 0 10px #2196f3,0 0 20px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3, ;
+}
+
+.mainbutton :hover{
+    color: black;
+    background:white;
+    text-shadow: #2196f3;
+    box-shadow: 0 0 10px #2196f3,0 0 20px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3, ;
+}
+
+

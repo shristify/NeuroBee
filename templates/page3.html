@@ -1,0 +1,133 @@
+{%if messg%}
+<script> alert("{{messg}}");</script>
+{%endif%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NeuroBee</title>
+        <link rel="stylesheet" type="text/css" href="page3.css">
+    </head>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: url(bglogin.jpg);
+    background-size: cover;
+}
+
+.box{
+    position: absolute;
+    top: 45%;
+    left: 54%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    background: rgba(23, 23, 59, 0.6)
+    
+    
+
+    
+}
+
+.box h2{
+    margin: 0, 0, 30px;
+    padding: 0;
+    color: seashell;
+    text-align: center;
+}
+
+.box .inputbox{
+    position: relative;
+}
+
+.box .inputbox input{
+    width: 60%;
+    padding:10px, 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.box .inputbox label{
+    position: absolute;
+    color: #ffffff;
+    font-size: 16px;
+    transition: 0.5s;
+    text-decoration:white ;
+
+}
+
+.box .inputbox input:focus~label{
+    top: -18px;
+}
+
+.box input {
+    background: transparent;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+}
+    </style>
+    <body>
+        <h1>Welcome {{e}}</h1>
+        <section class="xop-container">
+            <div class="xop-left">
+                <div class="help ">
+                    <button>Help!</button>
+                    <div>
+                        <button><a href ="{%url 'sendsms' %}">Friend1</a></button>
+                        <button><a href ="{%url 'sendsms' %}">Friend2</a></button>
+                        <button>HelpLine</button>
+                    </div>
+
+                </div>
+                <div class="text">
+                    <h1>Play Games</h1>
+                </div>
+                <div class="games">
+                 <a href="#" alt="tic tac toe"><img src="../devjam/tic_tac_toe.jpeg" alt="tic tac toe" width="100px" height="100px" ></a>
+                 <a href="#" alt="tic tac toe"><img src="../devjam/tic_tac_toe.jpeg" alt="tic tac toe" width="100px" height="100px"></a>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="xop-center">
+                <div class="logo">
+                    <img src="logo.png" alt="logo" width="100px" height="100px">
+                </div>
+                <div class="l_name">
+                    <h1>NeuroBee</h1>
+                    <h5>A Bee that cares</h5>
+                </div>
+                <div class="how ">
+                    <button><a herf ="#">How are you feeling?</a></button>
+                    <button>Chat Now</button>
+                </div>
+
+            </div>
+            <div class="xop-right">
+                <div class="setting">
+                    <button>Setting</button>
+                    <div>
+                    <button>Edit Replika</button>
+                    <button>Contact Us</button>
+                    </div>
+                   </div>
+                   <div class="logout">
+                          <button>Logout</button>
+                      </div> 
+                     <div class="media">
+                        <button>Gallery</button>
+                        <button>Videos</button>
+                     </div> 
+
+            </div>
+        </section> 
+    </body>
+</html> 
