@@ -1,0 +1,146 @@
+{%if messg%}
+<script> alert("{{messg}}");</script>
+{%endif%}
+
+<html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LOGIN FORM</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url(https://wallpapercave.com/wp/wp4813083.jpg);
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+    }
+    
+    .box{
+        width: 320px;
+        height: 420px;
+        background: #000;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+    }
+    
+    .avatar{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+    }
+    
+    h1{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .box p{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+    }
+    
+    .box input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .box input[type="text"], input[type="email"]
+    {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+    }
+    
+    .box input[type="text"], input[type="password"]
+    {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+    }
+    .box input[type="submit"]
+    {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #fb2525;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+    .box input[type="submit"]:hover
+    {
+        cursor: pointer;
+        background: #ffc107;
+        color: #000;
+    }
+    .box a{
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 20px;
+        color: darkgrey;
+    }
+    
+    .box a:hover
+    {
+        color: #ffc107;
+    }</style>
+    
+    <title>Login Page</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+
+</head>
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class ="box" >
+            <h2>LOGIN</h2>
+            <img src="data:image/png;base64,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" class="avatar">
+            <form action="/postsign/" method ="post">
+                {% csrf_token %}
+                <div class = "inputBox" >
+                    <input type="email" name=email required="">
+                    <label>EMAIL</label>
+                </div>
+                <div class = "inputBox" >
+                    <input type="password" name=pass required="">
+                    <label>PASSWORD</label>
+                </div>
+                <input  type="submit" name="" value="LOG IN">
+            </form>       
+    </div>
+
+</body>
+
+</html>
