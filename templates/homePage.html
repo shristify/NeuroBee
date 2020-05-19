@@ -8,16 +8,20 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="homePage.css">
-        <style>*{  
+        <style>
+        *{  
             margin: 0;
             padding: 0;
             box-sizing: border-box;            
         }
         body{
             background-image: url(https://wallpaperplay.com/walls/full/7/a/a/121406.jpg);
-            -webkit-background-size: cover;
-            background-size: cover;
             background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-background-size: cover;
+           
             height: 100vh;
             font-family: poppins;
             font-weight: 600;
@@ -142,9 +146,27 @@
             text-shadow: #fcfcfc;
             box-shadow: 0 0 10px #2196f3,0 0 20px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3, ;
         }
-        
-        
-        </style>
+        @media only screen and (max-width: 767px) {
+  body {
+  
+    background-image: url(https://wallpaperplay.com/walls/full/7/a/a/121406.jpg);
+  }
+}
+        @media screen and (max-width: 800px) {
+  .body, .paragraph {
+    width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+   .box{
+       margin: 0 5 0  5
+       align-content: center;
+       width: 50%; 
+  }
+}
+
+
+
+}    </style>
     </head>
     <div id="clockbox"></div>
 
@@ -155,8 +177,8 @@
         <nav>
             <ul class="nav-area">
 
-<li><div class="about"><a href="https://confusedcoder1.github.io/NeuroBee">About</a></div></li>
-<li><div class="contact"><a href="#">contact</a></div></li>
+<li><div class="about"><a href="https://confusedcoder1.github.io/aboutNeurobee/">About</a></div></li>
+
 </ul>
 </nav>
 
@@ -168,11 +190,7 @@
         <h1>NeuroBee</h1>
     <h2>A bee that cares</h2>
     </div>
-    <div class="box">
-        <a href="{%url 'signup'%}" class="mainbutton">
-         Chat now</a>
-    </div>
-        
+    
         <script src="" async defer></script>
     </body>
 </html>

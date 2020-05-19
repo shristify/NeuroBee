@@ -15,21 +15,21 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
         question : "Little interest or pleasure in doing things",
-        imgSrc : "quizlogo.png",
+        imgSrc : "https://image.shutterstock.com/image-vector/cute-honey-bees-round-frame-260nw-1301387419.jpg",
         choiceA : "Yes",
         choiceB : "No",
         choiceC :"Not Sure",
         correct : "B"
     },{
         question : "Feeling down, depressed, or hopeless",
-        imgSrc : "quizlogo.png",
+        imgSrc : "https://image.shutterstock.com/image-vector/cute-honey-bees-round-frame-260nw-1301387419.jpg",
         choiceA : "Yes",
         choiceB : "No",
         choiceC :"Not Sure",
         correct : "B"
     },{
         question : "Trouble falling or staying asleep, or sleeping too much",
-        imgSrc : "quizlogo.png",
+        imgSrc : "https://image.shutterstock.com/image-vector/cute-honey-bees-round-frame-260nw-1301387419.jpg",
         choiceA : "Yes",
         choiceB : "No",
         choiceC :"Not Sure",
@@ -37,7 +37,7 @@ let questions = [
         
     },{
         question : "Feeling tired or having little energy",
-        imgSrc : "quizlogo.png",
+        imgSrc : "https://image.shutterstock.com/image-vector/cute-honey-bees-round-frame-260nw-1301387419.jpg",
         choiceA : "Yes",
         choiceB : "No",
         choiceC :"Not Sure",
@@ -46,42 +46,42 @@ let questions = [
 
     },{
         question : "Poor appetite or overeating",
-        imgSrc : "quizlogo.png",
+        imgSrc : "https://image.shutterstock.com/image-vector/cute-honey-bees-round-frame-260nw-1301387419.jpg",
         choiceA : "Yes",
         choiceB : "No",
         choiceC :"Not Sure",
         correct : "B"
     },{
         question : "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
-        imgSrc : "quizlogo.png",
+        imgSrc : "https://image.shutterstock.com/image-vector/cute-honey-bees-round-frame-260nw-1301387419.jpg",
         choiceA : "Yes",
         choiceB : "No",
         choiceC :"Not Sure",
         correct : "B"
     },{
         question : "Trouble concentrating on things, such as reading the newspaper or watching television",
-        imgSrc : "quizlogo.png",
+        imgSrc : "https://image.shutterstock.com/image-vector/cute-honey-bees-round-frame-260nw-1301387419.jpg",
         choiceA : "Yes",
         choiceB : "No",
         choiceC :"Not Sure",
         correct : "B"
     },{
         question : "If you've had any days with issues above, how difficult have these problems made it for you at work, home, school, or with other people?",
-        imgSrc : "quizlogo.png",
+        imgSrc : "https://image.shutterstock.com/image-vector/cute-honey-bees-round-frame-260nw-1301387419.jpg",
         choiceA : "Yes",
         choiceB : "No",
         choiceC :"Not Sure",
         correct : "B"
     },{
         question : "Moving or speaking so slowly that other people could have noticed",
-        imgSrc : "quizlogo.png",
+        imgSrc : "https://image.shutterstock.com/image-vector/cute-honey-bees-round-frame-260nw-1301387419.jpg",
         choiceA : "Yes",
         choiceB : "No",
         choiceC :"Not Sure",
         correct : "B"
     },{
         question : "Thoughts that you would be better off dead, or of hurting yourself",
-        imgSrc : "quizlogo.png",
+        imgSrc : "https://image.shutterstock.com/image-vector/cute-honey-bees-round-frame-260nw-1301387419.jpg",
         choiceA : "Yes",
         choiceB : "No",
         choiceC :"Not Sure",
