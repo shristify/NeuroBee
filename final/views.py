@@ -47,9 +47,15 @@ def postsign(requests):
     return render(requests,'mainPage.html',{"e":email})
     
 def quiz(requests):
-    return render(requests,'index.html')    
+    if requests.session['uid']==str(session_id):
+     return render(requests,'index.html')
+    return render(requests,"login.html")
+
 def you(requests):
-    return render(requests,'you.html')
+    if requests.session['uid']==str(session_id):
+      return render(requests,'you.html')
+    return render(requests,"login.html")
+   
 
 def waterReminder(requests):
     t=time.time()+ 30*60
@@ -73,6 +79,7 @@ def waterReminder(requests):
 
 def logout(requests):
     auth.logout(requests)
+    del requests.session['uid']
     msg="sucessfully logged out"
     return render(requests,"homePage.html",{"messg":msg})    
 
